@@ -47,7 +47,6 @@
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "putout": "^25.14.0",
-    "redrun": "^7.0.0",
     "supertape": "^7.2.1"
   },
   "engines": {
