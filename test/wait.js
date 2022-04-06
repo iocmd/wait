@@ -18,6 +18,20 @@ test('wait: setTimeout', async (t) => {
     t.end();
 });
 
+test('wait: setTimeout: number', async (t) => {
+    const {setTimeout} = global;
+    const setTimeoutStub = stub((f) => f());
+    
+    global.setTimeout = setTimeoutStub;
+    
+    await wait(1);
+    
+    global.setTimeout = setTimeout;
+    
+    t.calledWith(setTimeoutStub, [stub(), 1]);
+    t.end();
+});
+
 test('wait: setTimeout: timeout', async (t) => {
     const {setTimeout} = global;
     const setTimeoutStub = stub((f) => f());

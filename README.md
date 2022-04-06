@@ -1,4 +1,4 @@
-# Wait [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
+# Wait [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 Promisified `setTimeout`
 
@@ -14,11 +14,15 @@ await wait(console.log, 'hello');
 
 await wait(1000, console.log, 'hello');
 // log "hello" in a second
+
+await wait(1000);
+// wait for a second
 ```
 
 ## Related
 
 - [hold-up](https://github.com/iocmd/hold-up "hold-up") - setInterval with promises, counter and error handling
+
 - [currify](https://github.com/coderaiser/currify "currify") - translate the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single or more arguments
 
 - [fullstore](https://github.com/coderaiser/fullstore "fullstore") - functional variables
@@ -29,14 +33,11 @@ await wait(1000, console.log, 'hello');
 
 MIT
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/@iocmd/wait.svg?style=flat
-[BuildStatusIMGURL]:        https://travis-ci.com/iocmd/wait.svg?branch=master
-[DependencyStatusIMGURL]:   https://img.shields.io/david/iocmd/wait.svg?style=flat
-[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]:                   https://npmjs.org/package/@iocmd/wait "npm"
-[BuildStatusURL]:           https://travis-ci.com/iocmd/wait  "Build Status"
-[DependencyStatusURL]:      https://david-dm.org/iocmd/wait "Dependency Status"
-[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
-
-[CoverageURL]:              https://coveralls.io/github/iocmd/wait?branch=master
-[CoverageIMGURL]:           https://coveralls.io/repos/iocmd/wait/badge.svg?branch=master&service=github
+[NPMIMGURL]: https://img.shields.io/npm/v/@iocmd/wait.svg?style=flat
+[BuildStatusIMGURL]: https://travis-ci.com/iocmd/wait.svg?branch=master
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[NPMURL]: https://npmjs.org/package/@iocmd/wait "npm"
+[BuildStatusURL]: https://travis-ci.com/iocmd/wait "Build Status"
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
+[CoverageURL]: https://coveralls.io/github/iocmd/wait?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/iocmd/wait/badge.svg?branch=master&service=github
