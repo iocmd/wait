@@ -4,10 +4,10 @@ const {run} = require('madrun');
 
 module.exports = {
     'test': () => 'tape test/*.js',
-    'coverage': () => 'nyc npm test',
+    'coverage': () => 'c8 npm test',
     'lint': () => 'putout .',
     'fix:lint': () => run('lint', '--fix'),
-    'report': () => 'nyc report --reporter=text-lcov | coveralls',
+    'report': () => 'c8 report --reporter=lcov',
     'watcher': () => 'nodemon -w test -w lib --exec',
     'watch:tape': () => 'nodemon -w test -w lib --exec tape',
     'watch:test': async () => await run('watcher', await run('test')),
