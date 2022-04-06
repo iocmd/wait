@@ -1,0 +1,10 @@
+2022.04.06, v2.0.0
+
+feature:
+- (wait) drop support of node < 16
+- (package) supertape v7.2.1
+- (package) madrun v9.0.2
+- (package) eslint-plugin-putout v14.8.0
+- (package) putout v25.14.0
+- (package) eslint v8.12.0
+
