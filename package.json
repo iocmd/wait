@@ -40,7 +40,7 @@
   "devDependencies": {
     "@cloudcmd/stub": "^2.3.1",
     "coveralls": "^3.0.2",
-    "eslint": "^6.1.0",
+    "eslint": "^8.12.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^3.0.0",
     "madrun": "^5.0.0",
